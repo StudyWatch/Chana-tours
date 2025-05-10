@@ -2,17 +2,48 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaWhatsapp, FaFacebookF, FaLink } from 'react-icons/fa';
 
-import eatsderot1 from '../assets/eatsderot.jpg';
-import eatsderot2 from '../assets/otef.jpg';
-import otef1 from '../assets/otef.jpg';
-import otef2 from '../assets/eatsderot.jpg';
+// 🍽️ אוכל
+import eatsderot from '../assets/eatsderot.jpg';
+import food2 from '../assets/food2.jpg';
+import food3 from '../assets/food3.jpg';
+import food4 from '../assets/food4.jpg';
+import sderot2 from '../assets/sderot2.jpg';
+import food5 from '../assets/food5.jpg';
+import foodWar1 from '../assets/accordingwarandfood.jpg';
+import foodWar2 from '../assets/accordingwarandfood2.jpg';
+import food6 from '../assets/food6.jpg';
+import food7 from '../assets/food7.jpg';
+import food8 from '../assets/food8.jpg';
+import food9 from '../assets/food9.jpg';
+import food10 from '../assets/food10.jpg';
+import food11 from '../assets/food11.jpg';
+import food12 from '../assets/food12.jpg';
+import food13 from '../assets/food13.jpg';
+
+
+// 🌙️ מלחמה
+import otef from '../assets/otef.jpg';
+import otef1 from '../assets/Otef1.jpg';
+import otef2 from '../assets/otef2.jpg';
+import otef3 from '../assets/otef3.jpg';
+import war1 from '../assets/accordingwar.jpg';
+import war2 from '../assets/accordingwar2.jpg';
+import war3 from '../assets/accordingwar3.jpg';
+import war4 from '../assets/accordingwar4.jpg';
+import war5 from '../assets/accordingwar5.jpg';
+
+
+// 🌍 חו"ל
 import abroad1 from '../assets/abroad.jpg';
-import abroad2 from '../assets/otef.jpg';
+import abroad2 from '../assets/abroad2.jpg';
+import abroad3 from '../assets/abroad3.jpg';
+import album from '../assets/album.jpg';
+
 
 const tours = [
   {
     title: 'סיור אוכל ותרבות בשדרות',
-    images: [eatsderot1, eatsderot2],
+    images: [eatsderot, food2, food3, food4, food5, food6, food7, food8, food9, food10, food11, food12, food13, foodWar1, foodWar2],
     description: 'מסע טעים בלב הדרום עם מפגש אישי ואותנטי.',
     duration: 'כ-4 שעות',
     price: '₪180 למשתתף',
@@ -22,7 +53,7 @@ const tours = [
   },
   {
     title: 'שדרות – בעקבות המלחמה',
-    images: [otef1, otef2],
+    images: [otef, otef1, otef2, otef3, war1, war2, war3, war4, war5],
     description: 'סיור עוצמתי בעקבות השביעי באוקטובר.',
     duration: 'כ-3 שעות',
     price: '₪150 למשתתף',
@@ -32,7 +63,7 @@ const tours = [
   },
   {
     title: 'טיול מודרך לצפון איטליה',
-    images: [abroad1, abroad2],
+    images: [abroad1, abroad2, abroad3, album, sderot2],
     description: 'טיולים, תרבות, אוכל והדרכה חמה בעברית.',
     duration: '7 ימים / 6 לילות',
     price: '$2000 לאדם (כולל טיסות והדרכה)',
@@ -50,7 +81,10 @@ export default function Tours() {
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndexes((prev) =>
-        prev.map((index, i) => (index + 1) % tours[i].images.length)
+        prev.map((index, i) => {
+          const imagesLength = tours[i].images.length;
+          return (index + 1) % imagesLength;
+        })
       );
     }, 4000);
     return () => clearInterval(interval);
@@ -61,6 +95,7 @@ export default function Tours() {
     setCopiedIndex(i);
     setTimeout(() => setCopiedIndex(null), 2000);
   };
+
 
   return (
     <section
