@@ -213,7 +213,7 @@ export default function Tours() {
 
         <div className="mt-20 flex justify-center gap-6">
           <a
-            href="https://wa.me/9725XXXXXXXX"
+            href="https://wa.me/972506316950?text=שלום%20חנה,%20אני%20מעוניין%20להצטרף%20לסיור!"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center gap-2 text-sm shadow-lg"
