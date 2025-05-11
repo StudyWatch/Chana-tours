@@ -1,13 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
 
+import navedayal from '../assets/navedayal.jpg';
+
 const testimonials = [
   {
-    name: 'דנה לוי',
-    role: 'מטיילת מירושלים',
+    name: 'נווה לוי',
+    role: 'דייל מאלעל',
     quote: 'סיור מרגש ומלא השראה...',
     full: 'סיור מרגש, חם ואישי. חנה שילבה ידע, הומור והכלה – פשוט נפלא.',
     stars: 5,
-    avatar: '/avatars/dana.jpg',
+    avatar: navedayal,
   },
   {
     name: 'משפחת כהן',
