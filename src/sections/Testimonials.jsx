@@ -9,7 +9,8 @@ const testimonials = [
     quote: 'סיור מרגש ומלא השראה...',
     full: 'סיור מרגש, חם ואישי. חנה שילבה ידע, הומור והכלה – פשוט נפלא.',
     stars: 5,
-    avatar: navedayal,
+    avatar: '/avatars/default.jpg',
+
   },
   {
     name: 'משפחת כהן',
