@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-import navedayal from '../assets/navedayal.jpg';
 
 const testimonials = [
   {
