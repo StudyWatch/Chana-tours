@@ -10,3 +10,41 @@ html {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+/* ניגודיות גבוהה */
+.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast * {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.high-contrast a {
+  color: #00ffff !important;
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
+/* הדגשת קישורים */
+.highlight-links a {
+  background: yellow !important;
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+/* הגדלת טקסט מבוססת REM – לפי WCAG תקני */
+.text-size-100 {
+  font-size: 100%;
+}
+
+.text-size-150 {
+  font-size: 150%;
+}
+
+.text-size-200 {
+  font-size: 200%;
+}

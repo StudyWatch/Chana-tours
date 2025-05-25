@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AccessibilityWidget from './components/AccessibilityWidget';
 
 import Hero from './sections/Hero';
 import AboutGuide from './sections/AboutGuide';
@@ -42,6 +43,7 @@ export default function App() {
       </Routes>
 
       <Footer />
+      <AccessibilityWidget />
     </div>
   );
 }
